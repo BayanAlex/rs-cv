@@ -2,9 +2,10 @@
 
 ## Contact Info
 >- **Address:** Mykolaiv, Ukraine
->- **E-mail:** bayanalex@gmail.com
+>- **E-mail:** <bayanalex@gmail.com>
 >- **LinkedIn:** [OleksandrShyhyda](https://www.linkedin.com/in/oleksandr-shyhyda-1150aa139)
 >- **Telegram:** [@CyberAlex](https://t.me/CyberAlex)
+>- **GitLab:** [cyberalex](https://gitlab.com/cyberalex)
 
 ---
 
@@ -13,7 +14,7 @@
 ---
 
 ## Code example
-**codewars kata:** [Binomial Expansion](https://www.codewars.com/kata/540d0fdd3b6532e5c3000b5b)
+**Codewars kata:** [Binomial Expansion](https://www.codewars.com/kata/540d0fdd3b6532e5c3000b5b)
 ```javascript
 function expand(expr) {
     const a = +(expr.match(/(?<=\()-?\d*/).toString().replace(/-(?!\d)/, '-1') || '1');
@@ -47,18 +48,51 @@ function expand(expr) {
 ---
 
 ## Education
+>[**Admiral Makarov National University of Shipbuilding**](https://nuos.edu.ua/)  
+>Master degree in *Electromechanical Systems and Electric Drive*  
+>2005-2011  
+
+---
+
+## Work experience
+>[**"A-Technologies" LLC**](http://a-technologies.com.ua/)  
+>*Mykolaiv, Ukraine*  
+>Marine radio and navagational equipment engineer  
+>2011-...  
 
 ---
 
 ## Skills
-
----
-
-## Experience
+>- **Computer**
+>   * PC architecture
+>   * Networking (basic)
+>   * OS MS Windows, Linux (basic)
+>   * MS Word, Excel, Outlook, PowerPoint
+>- **Programming**
+>   * Embedded C (Microchip PIC microcontrollers)
+>   * Basic C++ (Qt)
+>   * VBA (MS Word, Excel)
+>   * __WEB (basic)__
+>       + HTML
+>       + CSS (SCSS, BEM naming)
+>       + JavaScript
+>   * GIT (basic)
+> - **Electronics**
+>   * Devices repair
+>   * Schematic design
+>   * Marine radio and navigational equipment installation and repair
 
 ---
 
 ## Courses
+>- **Professional**
+>   * **ECDIS by Transas (Wartsila)**  
+>   *Istanbul, 2014; Gothenburg, 2018*
+>   * **Inertial Navigational Systems by Teledyne TSS**  
+>   *London, 2012*
+>- **Web development**
+>   * Markup [FreelancerLifeStyle](https://www.youtube.com/c/FreelancerLifeStyle/)
+>   * JavaScript [learn.javascript.ru](https://learn.javascript.ru/)
 
 ---
 
