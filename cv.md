@@ -1,15 +1,22 @@
 # Oleksandr Shyhyda
 
 ## Contact Info
->- **Address:** Mykolaiv, Ukraine
->- **E-mail:** <bayanalex@gmail.com>
->- **LinkedIn:** [OleksandrShyhyda](https://www.linkedin.com/in/oleksandr-shyhyda-1150aa139)
->- **Telegram:** [@CyberAlex](https://t.me/CyberAlex)
->- **GitLab:** [cyberalex](https://gitlab.com/cyberalex)
+- **Address:** Mykolaiv, Ukraine
+- **E-mail:** <bayanalex@gmail.com>
+- **LinkedIn:** [OleksandrShyhyda](https://www.linkedin.com/in/oleksandr-shyhyda-1150aa139)
+- **Telegram:** [@CyberAlex](https://t.me/CyberAlex)
+- **GitLab:** [cyberalex](https://gitlab.com/cyberalex)
 
 ---
 
 ## Summary
+I have been fond of programming since high school. I started from **Pascal/Delphi** and then switched to **C (embedded)** and **C++ (Qt)**.  
+After graduating from university, I have been working as a marine service engineer.  
+While working at my current company, I developed several desktop network applications and microcontroller devices that are successfully used.  
+Also, I automated the document flow using **VBA** in MS Excel and Word.  
+Now I am passionate about **Web development** and wish to continue my path in IT.  
+You can view examples of my current training projects in my [**GitLab**](https://gitlab.com/cyberalex).  
+You can also enjoy playing my [**Snake game**](https://cyberalex.gitlab.io/snake/) :)
 
 ---
 
@@ -48,55 +55,55 @@ function expand(expr) {
 ---
 
 ## Education
->[**Admiral Makarov National University of Shipbuilding**](https://nuos.edu.ua/)  
->Master degree in *Electromechanical Systems and Electric Drive*  
->2005-2011  
+[**Admiral Makarov National University of Shipbuilding**](https://nuos.edu.ua/)  
+Master degree in *Electromechanical Systems and Electric Drive*  
+2005-2011  
 
 ---
 
 ## Work experience
->[**"A-Technologies" LLC**](http://a-technologies.com.ua/)  
->*Mykolaiv, Ukraine*  
->Marine radio and navagational equipment engineer  
->2011-...  
+[**"A-Technologies" LLC**](http://a-technologies.com.ua/)  
+*Mykolaiv, Ukraine*  
+Marine radio and navagational equipment engineer  
+2011-...  
 
 ---
 
 ## Skills
->- **Computer**
->   * PC architecture
->   * Networking (basic)
->   * OS MS Windows, Linux (basic)
->   * MS Word, Excel, Outlook, PowerPoint
->- **Programming**
->   * Embedded C (Microchip PIC microcontrollers)
->   * Basic C++ (Qt)
->   * VBA (MS Word, Excel)
->   * __WEB (basic)__
->       + HTML
->       + CSS (SCSS, BEM naming)
->       + JavaScript
->   * GIT (basic)
-> - **Electronics**
->   * Devices repair
->   * Schematic design
->   * Marine radio and navigational equipment installation and repair
+- **Computer**
+   * PC architecture
+   * Networking (basic)
+   * OS MS Windows, Linux (basic)
+   * MS Word, Excel, Outlook, PowerPoint
+- **Programming**
+   * Embedded C (Microchip PIC microcontrollers)
+   * Basic C++ (Qt)
+   * VBA (MS Word, Excel)
+   * __WEB (basic)__
+       + HTML
+       + CSS (SCSS, BEM naming)
+       + JavaScript
+   * GIT (basic)
+ - **Electronics**
+   * Devices repair
+   * Schematic design
+   * Marine radio and navigational equipment installation and repair
 
 ---
 
 ## Courses
->- **Professional**
->   * **ECDIS by Transas (Wartsila)**  
->   *Istanbul, 2014; Gothenburg, 2018*
->   * **Inertial Navigational Systems by Teledyne TSS**  
->   *London, 2012*
->- **Web development**
->   * Markup [FreelancerLifeStyle](https://www.youtube.com/c/FreelancerLifeStyle/)
->   * JavaScript [learn.javascript.ru](https://learn.javascript.ru/)
+- **Professional**
+   * **ECDIS by Transas (Wartsila)**  
+   *Istanbul, 2014; Gothenburg, 2018*
+   * **Inertial Navigational Systems by Teledyne TSS**  
+   *London, 2012*
+- **Web development**
+   * Markup [FreelancerLifeStyle](https://www.youtube.com/c/FreelancerLifeStyle/)
+   * JavaScript [learn.javascript.ru](https://learn.javascript.ru/)
 
 ---
 
 ## Languages
->- **Ukrainian** Native
->- **Russian** Fluent
->- **_English_** Upper Intermediate
+- **Ukrainian** Native
+- **Russian** Fluent
+- **_English_** Upper Intermediate
