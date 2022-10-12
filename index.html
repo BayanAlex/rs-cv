@@ -4,10 +4,153 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Oleksandr Shyhyda CV</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <div class="body-content">
+        <header">
+            <div class="header__my-info">
+                <h1 class="header__name">Oleksandr Shyhyda</h1>
+                <h2 class="header__occupation">Future Front-End Developer</h2>
+            </div>
+        </header>
+        <main>
+            <div class="main-content">
+                <section class="section section_contact-info">
+                    <h3 class="section-caption">Contact Info</h3>
+                    <ul class="contact-info__list">
+                        <li class="contact-info__item">Address: <a href="https://www.google.com/maps/place/%D0%9C%D0%B8%D0%BA%D0%BE%D0%BB%D0%B0%D1%97%D0%B2,+%D0%9C%D0%B8%D0%BA%D0%BE%D0%BB%D0%B0%D1%97%D0%B2%D1%81%D1%8C%D0%BA%D0%B0+%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D1%8C,+54000/@46.9332135,31.8679147,11z/data=!3m1!4b1!4m5!3m4!1s0x40c5cb89fb7213d5:0x970e39fab9e05680!8m2!3d46.975033!4d31.9945829?">Mykolaiv, Ukraine</a></li>
+                        <li class="contact-info__item">E-mail: <a href="mailto:bayanalex@gmail.com">bayanalex@gmail.com</a></li>
+                        <li class="contact-info__item">LinkedIn: <a href="https://www.linkedin.com/in/oleksandr-shyhyda-1150aa139">OleksandrShyhyda</a></li>
+                        <li class="contact-info__item">Telegram: <a href="https://t.me/CyberAlex">@CyberAlex</a></li>
+                        <li class="contact-info__item">GitLab: <a href="https://gitlab.com/cyberalex">cyberalex</a></li>
+                    </ul>
+                </section>
+                <section class="section section_summary">
+                    <h3 class="section-caption">Summary</h3>
+                    <div class="summary-content">
+                        I have been fond of programming since high school. I started from <strong>Pascal/Delphi</strong> and then switched to <strong>C (embedded)</strong> and <strong>C++ (Qt)</strong>.
+                        After graduating from university, I have been working as a marine service engineer.
+                        While working at my current company, I developed several desktop network applications and microcontroller devices that are successfully used.
+                        Also, I automated the document flow using <strong>VBA</strong> in MS Excel and Word.
+                        Now I am passionate about <strong>Web development</strong> and wish to continue my path in IT.
+                        You can view examples of my current training projects in my <a href="https://gitlab.com/cyberalex"><strong>GitLab</strong></a>.
+                        You can also enjoy playing my <a href="https://cyberalex.gitlab.io/snake"><strong>Snake Game</strong></a> (Russian version) :)
+                    </div>
+                </section>
+                <section class="section section_code-example">
+                    <h3 class="section-caption">Code example</h3>
+                    <p class="code-example">
+                        <strong>Codewars kata:</strong> <a href="https://www.codewars.com/kata/540d0fdd3b6532e5c3000b5b"><strong>Binomial Expansion</strong></a>
+                        <pre><code>
+function expand(expr) {
+    const a = +(expr.match(/(?<=\()-?\d*/).toString().replace(/-(?!\d)/, '-1') || '1');
+    const b = +expr.match(/-?\d+(?=\))/).toString();
+    const x = expr.match(/\w(?=[-+])/).toString();
+    const n = +expr.match(/(?<=\^)\d+/).toString();
+    let result = [];
+    for(let k = n; k >= 0; k--) {
+        let c = '' + (fact(n) / (fact(k) * fact(n - k))) * a**k * b**(n - k);
+        if(c == '0')
+            continue;  
+        if(k != 0) {
+            if(c == '1')
+                c = '';
+            else if (c == '-1')
+                c = '-';
+            c += k == 1 ? x : `${x}^${k}`;
+        }
+        result.push(c);
+    }
+    return result.join('+').replace(/\+-/g, '-');
+
+    function fact(n) {
+        if(n == 0)
+            return 1;
+        return n * fact(n - 1);
+    }
+}
+                        </code></pre>
+                    </p>
+                </section>
+                <section class="section section_education">
+                    <h3 class="section-caption">Education</h3>
+                    <a href="https://nuos.edu.ua/"><strong>Admiral Makarov National University of Shipbuilding</strong></a>
+                    Master degree in <i>Electromechanical Systems and Electric Drive</i>
+                    2005-2011
+                </section>
+                <section class="section section_work-experience">
+                    <h3 class="section-caption">Work experience</h3>
+                    <a href="http://a-technologies.com.ua/"><strong>"A-Technologies" LLC</strong></a>
+                    <i>Mykolaiv, Ukraine</i>
+                    Marine radio and navagational equipment engineer
+                    2011-...
+                </section>
+                <section class="section section_skills">
+                    <h3 class="section-caption">Skills</h3>
+                    <ul class="skills__list">
+                        <li class="skills__item">Computer</li>
+                        <ul class="skills__list">
+                            <li class="skills__item">PC architecture</li>
+                            <li class="skills__item">Networking (basic)</li>
+                            <li class="skills__item">OS MS Windows, Linux (basic)</li>
+                            <li class="skills__item">MS Word, Excel, Outlook, PowerPoint</li>
+                        </ul>
+                        <li class="skills__item">Programming</li>
+                        <ul class="skills__list">
+                            <li class="skills__item">Embedded C (Microchip PIC microcontrollers)</li>
+                            <li class="skills__item">C++/Qt (basic)</li>
+                            <li class="skills__item">VBA (MS Word, Excel)</li>
+                            <li class="skills__item">WEB (basic)</li>
+                            <ul class="skills__list">
+                                <li class="skills__item">HTML</li>
+                                <li class="skills__item">CSS (SCSS, BEM naming)</li>
+                                <li class="skills__item">JavaScript</li>
+                            </ul>
+                            <li class="skills__item">GIT (basic)</li>
+                        </ul>
+                        <li class="skills__item">Electronics</li>
+                        <ul class="skills__list">
+                            <li class="skills__item">Devices repair</li>
+                            <li class="skills__item">Schematic design</li>
+                            <li class="skills__item">Marine radio and navigational equipment installation and repair</li>
+                        </ul>
+                    </ul>
+                </section>
+                <section class="section section_courses">
+                    <h3 class="section-caption">Courses</h3>
+                    <ul class="courses__list">
+                        <li class="courses__item">Professional</li>
+                        <ul class="courses__list">
+                            <li class="courses__item">ECDIS by Transas (Wartsila)<div>Istanbul, 2014; Gothenburg, 2018</div></li>
+                            <li class="courses__item">Inertial Navigational Systems by Teledyne TSS<div>London, 2012</div></li>
+                        </ul>
+                        <li class="courses__item">Web development</li>
+                        <ul class="courses__list">
+                            <li class="courses__item"><a href="https://www.youtube.com/c/FreelancerLifeStyle/">FreelancerLifeStyle</a></li>
+                            <li class="courses__item"><a href="https://learn.javascript.ru/">learn.javascript.ru</a></li>
+                        </ul>
+                    </ul>
+                </section>
+                <section class="section section_languages">
+                    <h3 class="section-caption">Languages</h3>
+                    <ul class="languages__list">
+                        <li class="languages__item">Ukrainian Native</li>
+                        <li class="languages__item">Russian Fluent</li>
+                        <li class="languages__item">English Upper Intermediate</li>
+                    </ul>
+                </section>
+            </div>
+        </main>    
+        <footer>
+            <div class="footer-content">
+                <div class="github"><a href="https://github.com/BayanAlex" class="github__link"><img src="img/logo-github.png" alt="github logo" class="github__logo"></a></div>
+                <div class="date">2022</div>
+                <div class="myname">Oleksandr Shyhyda</div>
+                <div class="rs-school"><a href="https://rs.school/" class="rs-school__link"><img src="img/logo-rsschool3.png" alt="rs-school logo" class="rs-school__logo"></a></div>
+            </div>
+        </footer>
+    </div>
 </body>
 </html>
