@@ -6,149 +6,217 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Oleksandr Shyhyda CV</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="fonts/icofont/icofont.min.css">
 </head>
 <body>
     <div class="body-content">
-        <header">
-            <div class="header__my-info">
-                <h1 class="header__name">Oleksandr Shyhyda</h1>
-                <h2 class="header__occupation">Future Front-End Developer</h2>
-            </div>
-        </header>
-        <main>
-            <div class="main-content">
-                <section class="section section_contact-info">
-                    <h3 class="section-caption">Contact Info</h3>
-                    <ul class="contact-info__list">
-                        <li class="contact-info__item">Address: <a href="https://www.google.com/maps/place/%D0%9C%D0%B8%D0%BA%D0%BE%D0%BB%D0%B0%D1%97%D0%B2,+%D0%9C%D0%B8%D0%BA%D0%BE%D0%BB%D0%B0%D1%97%D0%B2%D1%81%D1%8C%D0%BA%D0%B0+%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D1%8C,+54000/@46.9332135,31.8679147,11z/data=!3m1!4b1!4m5!3m4!1s0x40c5cb89fb7213d5:0x970e39fab9e05680!8m2!3d46.975033!4d31.9945829?">Mykolaiv, Ukraine</a></li>
-                        <li class="contact-info__item">E-mail: <a href="mailto:bayanalex@gmail.com">bayanalex@gmail.com</a></li>
-                        <li class="contact-info__item">LinkedIn: <a href="https://www.linkedin.com/in/oleksandr-shyhyda-1150aa139">OleksandrShyhyda</a></li>
-                        <li class="contact-info__item">Telegram: <a href="https://t.me/CyberAlex">@CyberAlex</a></li>
-                        <li class="contact-info__item">GitLab: <a href="https://gitlab.com/cyberalex">cyberalex</a></li>
-                    </ul>
-                </section>
-                <section class="section section_summary">
-                    <h3 class="section-caption">Summary</h3>
-                    <div class="summary-content">
-                        I have been fond of programming since high school. I started from <strong>Pascal/Delphi</strong> and then switched to <strong>C (embedded)</strong> and <strong>C++ (Qt)</strong>.
-                        After graduating from university, I have been working as a marine service engineer.
-                        While working at my current company, I developed several desktop network applications and microcontroller devices that are successfully used.
-                        Also, I automated the document flow using <strong>VBA</strong> in MS Excel and Word.
-                        Now I am passionate about <strong>Web development</strong> and wish to continue my path in IT.
-                        You can view examples of my current training projects in my <a href="https://gitlab.com/cyberalex"><strong>GitLab</strong></a>.
-                        You can also enjoy playing my <a href="https://cyberalex.gitlab.io/snake"><strong>Snake Game</strong></a> (Russian version) :)
+        <header>
+            <div class="my-info">
+                <h1 class="my-info__name">Oleksandr Shyhyda</h1>
+                <h2 class="my-info__occupation">Future Web Developer</h2>
+                <img src="img/photo.jpg" alt="my photo" class="my-info__photo block-shadow">
+                <section class="section section_contact-info block-shadow">
+                    <div class="section-caption"><h3 class="section-caption__text">Contact Info</h3></div>
+                    <div class="contact-info">
+                        <div class="contact-info__prop">address:</div><div class="contact-info__value"><a href="https://www.google.com/maps/place/%D0%9C%D0%B8%D0%BA%D0%BE%D0%BB%D0%B0%D1%97%D0%B2,+%D0%9C%D0%B8%D0%BA%D0%BE%D0%BB%D0%B0%D1%97%D0%B2%D1%81%D1%8C%D0%BA%D0%B0+%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D1%8C,+54000/@46.9332135,31.8679147,11z/data=!3m1!4b1!4m5!3m4!1s0x40c5cb89fb7213d5:0x970e39fab9e05680!8m2!3d46.975033!4d31.9945829?">Mykolaiv, Ukraine</a></div>
+                        <div class="contact-info__prop">e-mail:</div><div class="contact-info__value"><a href="mailto:bayanalex@gmail.com">bayanalex@gmail.com</a></div>
+                        <div class="contact-info__prop">telegram:</div><div class="contact-info__value"><a href="mailto:bayanalex@gmail.com">@CyberAlex</a></div>
+                        <div class="contact-info__prop">gitlab:</div><div class="contact-info__value"><a href="https://gitlab.com/cyberalex">cyberalex</a></div>
+                    </div>
+                    <div class="social-buttons">
+                        <a href="https://www.linkedin.com/in/oleksandr-shyhyda-1150aa139" class="social-button"><i class="icofont-linkedin"></i></a>
+                        <a href="https://www.facebook.com/alessandro.shigida" class="social-button"><i class="icofont-facebook"></i></a>
                     </div>
                 </section>
-                <section class="section section_code-example">
-                    <h3 class="section-caption">Code example</h3>
-                    <p class="code-example">
-                        <strong>Codewars kata:</strong> <a href="https://www.codewars.com/kata/540d0fdd3b6532e5c3000b5b"><strong>Binomial Expansion</strong></a>
-                        <pre><code>
-function expand(expr) {
-    const a = +(expr.match(/(?<=\()-?\d*/).toString().replace(/-(?!\d)/, '-1') || '1');
-    const b = +expr.match(/-?\d+(?=\))/).toString();
-    const x = expr.match(/\w(?=[-+])/).toString();
-    const n = +expr.match(/(?<=\^)\d+/).toString();
-    let result = [];
-    for(let k = n; k >= 0; k--) {
-        let c = '' + (fact(n) / (fact(k) * fact(n - k))) * a**k * b**(n - k);
-        if(c == '0')
-            continue;  
-        if(k != 0) {
-            if(c == '1')
-                c = '';
-            else if (c == '-1')
-                c = '-';
-            c += k == 1 ? x : `${x}^${k}`;
+            </div>
+        </header>
+
+        <main>
+            <div class="main-content">
+                <section class="section section_summary block-shadow">
+                    <div class="section-caption"><h3 class="section-caption__text">Summary</h3></div>
+                    <div class="summary-content">
+                        <p>I have been fond of programming since high school. I started from <strong>Pascal/Delphi</strong> and then switched to <span class="no-wrap"><strong>C (embedded)</strong></span> and <span class="no-wrap"><strong>C++ (Qt)</strong><span></span>.</p>
+                        <p>After graduating from university, I have been working as a marine service engineer.</p>
+                        <p>While working at my current company, I developed several desktop network applications and microcontroller devices that are successfully used.</p>
+                        <p>Also, I automated the document flow using <strong>VBA</strong> in MS Excel and Word.</p>
+                        <p>Now I am passionate about <strong>Web development</strong> and wish to continue my path in IT.</p>
+                        <p>You can view examples of my current training projects in my <a href="https://gitlab.com/cyberalex">GitLab</a>.</p>
+                        <p>You can also enjoy playing my <a href="https://cyberalex.gitlab.io/snake">Snake Game</a> (Russian version) <i class="icofont-slightly-smile"></i></p>
+                    </div>
+                </section>
+
+                <section class="section section_code block-shadow">
+                    <div class="section-caption"><h3 class="section-caption__text">Code example</h3></div>
+                    <div class="code">
+                        <div class="code__source">
+                            <img src="/img/codewars-icon.svg" alt="Codewars kata" class="code__img">
+                            <a href="https://www.codewars.com/kata/540d0fdd3b6532e5c3000b5b" class="code__link">Binomial Expansion</a>
+                        </div>
+
+                        <pre class="code__listing"><code><span class="js-func">function</span> <span class="js-func-name">expand</span>(expr) {
+    <span class="js-decl">const</span> a = +(expr.match(<span class="js-regexp">/(?&lt;=\()-?\d*/</span>).toString().replace(<span class="js-regexp">/-(?!\d)/</span>, <span class="js-str">'-1'</span>) || <span class="js-str">'1'</span>);
+    <span class="js-decl">const</span> b = +expr.match(<span class="js-regexp">/-?\d+(?=\))/</span>).toString();
+    <span class="js-decl">const</span> x = expr.match(<span class="js-regexp">/\w(?=[-+])/</span>).toString();
+    <span class="js-decl">const</span> n = +expr.match(<span class="js-regexp">/(?&lt;=\^)\d+/</span>).toString();
+    <span class="js-decl">let</span> result = [];
+    <span class="js-cycle">for</span>(<span class="js-decl">let</span> k = n; k >= <span class="js-num">0</span>; k--) {
+        <span class="js-decl">let</span> c = <span class="js-str">''</span> + (fact(n) / (fact(k) * fact(n - k))) * a**k * b**(n - k);
+        <span class="js-flow">if</span>(c == <span class="js-str">'0'</span>)
+            <span class="js-flow">continue</span>;  
+        <span class="js-flow">if</span>(k != <span class="js-num">0</span>) {
+            <span class="js-flow">if</span>(c == <span class="js-str">'1'</span>)
+                c = <span class="js-str">''</span>;
+            <span class="js-flow">else if</span> (c == <span class="js-str">'-1'</span>)
+                c = <span class="js-str">'-'</span>;
+            c += k == <span class="js-num">1</span> ? x : <span class="js-str">`${x}^${k}`</span>;
         }
         result.push(c);
     }
-    return result.join('+').replace(/\+-/g, '-');
+    <span class="js-flow">return</span> result.join(<span class="js-str">'+'</span>).replace(<span class="js-regexp">/\+-/g</span>, <span class="js-str">'-'</span>);
 
-    function fact(n) {
-        if(n == 0)
-            return 1;
-        return n * fact(n - 1);
+    <span class="js-func">function</span> <span class="js-func-name">fact</span>(n) {
+        <span class="js-flow">if</span>(n == <span class="js-num">0</span>)
+            <span class="js-flow">return</span> <span class="js-num">1</span>;
+        <span class="js-flow">return</span> n * fact(n - <span class="js-num">1</span>);
     }
-}
-                        </code></pre>
-                    </p>
+}                       </code></pre>
+
+                    </div>
                 </section>
-                <section class="section section_education">
-                    <h3 class="section-caption">Education</h3>
-                    <a href="https://nuos.edu.ua/"><strong>Admiral Makarov National University of Shipbuilding</strong></a>
-                    Master degree in <i>Electromechanical Systems and Electric Drive</i>
-                    2005-2011
+
+                <section class="section section_education block-shadow">
+                    <div class="section-caption"><h3 class="section-caption__text">Education</h3></div>
+                    <div class="career">
+                        <div class="career__row"><i class="icofont-university"></i> <a href="https://nuos.edu.ua/">Admiral Makarov National University of Shipbuilding</a></div>
+                        <div class="career__row"><i class="icofont-education"></i> Master's degree with distinction in</div>
+                        <div class="career__row">Electromechanical Systems and Electric Drive</div>
+                        <div class="career__row">
+                            <div class="place">Mykolaiv, Ukraine</div>
+                            <div class="period">2005-2011</div>
+                        </div>
+                    </div>
                 </section>
-                <section class="section section_work-experience">
-                    <h3 class="section-caption">Work experience</h3>
-                    <a href="http://a-technologies.com.ua/"><strong>"A-Technologies" LLC</strong></a>
-                    <i>Mykolaiv, Ukraine</i>
-                    Marine radio and navagational equipment engineer
-                    2011-...
+
+                <section class="section section_work-experience block-shadow">
+                    <div class="section-caption"><h3 class="section-caption__text">Work experience</h3></div>
+                    <div class="career">
+                        <div class="career__row"><i class="icofont-anchor"></i>  <a href="http://a-technologies.com.ua/">A-Technologies LLC</a></div>
+                        <div class="career__row"><i class="icofont-worker"></i>  Marine radio and navagational equipment engineer</div>
+                        <div class="career__row">
+                            <div class="place">Mykolaiv, Ukraine</div>
+                            <div class="period">since 2011</div>
+                        </div>
+                    </div>
                 </section>
-                <section class="section section_skills">
-                    <h3 class="section-caption">Skills</h3>
-                    <ul class="skills__list">
-                        <li class="skills__item">Computer</li>
-                        <ul class="skills__list">
-                            <li class="skills__item">PC architecture</li>
-                            <li class="skills__item">Networking (basic)</li>
-                            <li class="skills__item">OS MS Windows, Linux (basic)</li>
-                            <li class="skills__item">MS Word, Excel, Outlook, PowerPoint</li>
-                        </ul>
-                        <li class="skills__item">Programming</li>
-                        <ul class="skills__list">
-                            <li class="skills__item">Embedded C (Microchip PIC microcontrollers)</li>
-                            <li class="skills__item">C++/Qt (basic)</li>
-                            <li class="skills__item">VBA (MS Word, Excel)</li>
-                            <li class="skills__item">WEB (basic)</li>
-                            <ul class="skills__list">
-                                <li class="skills__item">HTML</li>
-                                <li class="skills__item">CSS (SCSS, BEM naming)</li>
-                                <li class="skills__item">JavaScript</li>
+
+                <section class="section section_skills block-shadow">
+                    <div class="section-caption"><h3 class="section-caption__text">Skills</h3></div>
+                    <div class="list-blocks list-blocks_skills">
+                        <div class="list-block">
+                            <div class="list-block__caption">Computer</div>
+                            <ul class="list-block__list">
+                                <li class="list-block__item">PC architecture</li>
+                                <li class="list-block__item">Networking (basic)</li>
+                                <li class="list-block__item">OS MS Windows, Linux (basic)</li>
+                                <li class="list-block__item">MS Word, Excel (advanced), Outlook, PowerPoint</li>
                             </ul>
-                            <li class="skills__item">GIT (basic)</li>
-                        </ul>
-                        <li class="skills__item">Electronics</li>
-                        <ul class="skills__list">
-                            <li class="skills__item">Devices repair</li>
-                            <li class="skills__item">Schematic design</li>
-                            <li class="skills__item">Marine radio and navigational equipment installation and repair</li>
-                        </ul>
-                    </ul>
+                        </div>
+                        <div class="list-block">
+                            <div class="list-block__caption">Programming</div>
+                            <ul class="list-block__list">
+                                <li class="list-block__item">Embedded C (Microchip PIC microcontrollers)</li>
+                                <li class="list-block__item">C++/Qt (basic)</li>
+                                <li class="list-block__item">VBA (MS Word, Excel)</li>
+                            </ul>
+                        </div>
+                        <div class="list-block">
+                            <div class="list-block__caption">Electronics</div>
+                            <ul class="list-block__list">
+                                <li class="list-block__item">Devices repair</li>
+                                <li class="list-block__item">Schematic design</li>
+                                <li class="list-block__item">Marine equipment installation and repair</li>
+                            </ul>
+                        </div>
+                        <div class="list-block">
+                            <div class="list-block__caption">WEB</div>
+                            <ul class="list-block__list">
+                                <li class="list-block__item">HTML</li>
+                                <li class="list-block__item">CSS, SCSS, BEM methodology</li>
+                                <li class="list-block__item">JavaScript</li>
+                                <li class="list-block__item">VS Code</li>
+                                <li class="list-block__item">GIT (basic)</li>
+                            </ul>
+                        </div>
+                    </div>
                 </section>
-                <section class="section section_courses">
-                    <h3 class="section-caption">Courses</h3>
-                    <ul class="courses__list">
-                        <li class="courses__item">Professional</li>
-                        <ul class="courses__list">
-                            <li class="courses__item">ECDIS by Transas (Wartsila)<div>Istanbul, 2014; Gothenburg, 2018</div></li>
-                            <li class="courses__item">Inertial Navigational Systems by Teledyne TSS<div>London, 2012</div></li>
-                        </ul>
-                        <li class="courses__item">Web development</li>
-                        <ul class="courses__list">
-                            <li class="courses__item"><a href="https://www.youtube.com/c/FreelancerLifeStyle/">FreelancerLifeStyle</a></li>
-                            <li class="courses__item"><a href="https://learn.javascript.ru/">learn.javascript.ru</a></li>
-                        </ul>
-                    </ul>
+
+                <section class="section section_courses block-shadow">
+                    <div class="section-caption"><h3 class="section-caption__text">Courses</h3></div>
+                    <div class="list-blocks list-blocks_courses">
+                        <div class="list-block">
+                            <div class="list-block__caption">Professional</div>
+                            <ul class="list-block__list">
+                                <li class="list-block__item">ECDIS by Transas (Wartsila)
+                                    <p>Istanbul (2014)</p>
+                                    <p>Gothenburg (2018)</p>
+                                </li>
+                                <li class="list-block__item">Inertial Navigational Systems by Teledyne TSS
+                                    <p>London (2012)</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="list-block">
+                            <div class="list-block__caption">Web development</div>
+                            <ul class="list-block__list">
+                                <li class="list-block__item"><a href="https://www.youtube.com/c/FreelancerLifeStyle/">FreelancerLifeStyle</a></li>
+                                <li class="list-block__item"><a href="https://learn.javascript.ru/">learn.javascript.ru</a></li>
+                            </ul>
+                        </div>
+                    </div>
                 </section>
-                <section class="section section_languages">
-                    <h3 class="section-caption">Languages</h3>
+
+                <section class="section section_languages block-shadow">
+                    <div class="section-caption"><h3 class="section-caption__text">Languages</h3></div>
                     <ul class="languages__list">
-                        <li class="languages__item">Ukrainian Native</li>
-                        <li class="languages__item">Russian Fluent</li>
-                        <li class="languages__item">English Upper Intermediate</li>
+                        <li class="languages__item">
+                            <div class="language__name-with-flag">
+                                <img src="/img/flag-ua.png" alt="" class="languages__flag">
+                                <div class="languages__name">Ukrainian</div>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-bar__progress">native</div>
+                            </div>
+                        </li>
+                        <li class="languages__item">
+                            <div class="language__name-with-flag">
+                                <img src="/img/flag-ru.png" alt="" class="languages__flag">
+                                <div class="languages__name">Russian</div>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-bar__progress">fluent</div>
+                            </div>
+                        </li>
+                        <li class="languages__item">
+                            <div class="language__name-with-flag">
+                                <img src="/img/flag-gb.png" alt="" class="languages__flag">
+                                <div class="languages__name">English</div>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-bar__progress skill-bar__progress_B2">B2</div>
+                            </div>
+                        </li>
                     </ul>
                 </section>
             </div>
-        </main>    
+        </main>
+
         <footer>
             <div class="footer-content">
-                <div class="github"><a href="https://github.com/BayanAlex" class="github__link"><img src="img/logo-github.png" alt="github logo" class="github__logo"></a></div>
-                <div class="date">2022</div>
+                <a href="https://github.com/BayanAlex" class="footer-github footer-link"><img src="img/logo-github.png" alt="github logo" class="footer-logo"></a>
                 <div class="myname">Oleksandr Shyhyda</div>
-                <div class="rs-school"><a href="https://rs.school/" class="rs-school__link"><img src="img/logo-rsschool3.png" alt="rs-school logo" class="rs-school__logo"></a></div>
+                <div class="date">2022</div>
+                <a href="https://rs.school/" class="footer-rs-school footer-link"><img src="img/logo-rsschool.png" alt="rs-school logo" class="footer-logo"></a>
             </div>
         </footer>
     </div>
