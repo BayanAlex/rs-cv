@@ -1,0 +1,31 @@
+.js-func {
+	color: blue;
+}
+
+.js-func-name {
+	color: dimgray;
+}
+
+.js-decl {
+	color: blue;
+}
+
+.js-flow {
+	color: blue;
+}
+
+.js-cycle {
+	color: blue;
+}
+
+.js-regexp {
+	color: rgb(209, 84, 84)
+}
+
+.js-num {
+	color: darkgreen;
+}
+
+.js-str {
+	color: brown;
+}
