@@ -4,6 +4,12 @@
 :root {
 	--block-col-gap: 40px;
 	--block-row-gap: 60px;
+	--main-color: rgb(0, 132, 206);
+	--sec-color: rgb(255, 196, 0);
+	--bg-color: #fff;
+	--sec-text-color: rgb(104, 104, 104);
+	--link-color: rgb(1, 71, 133);
+	--bar-color: rgb(207, 207, 207);
   }
 
 /*Reset*/
@@ -50,17 +56,16 @@ body {
 	font-family: 'Lato';
 	line-height: 1.5;
 	height: fit-content;
-	/* background-color: rgb(238, 238, 238); */
-	background-color: rgb(0, 132, 206);
+	background-color: var(--main-color);
 }
 
 a, a:visited {
-	color: rgb(1, 71, 133);
+	color: var(--link-color);
 	transition: all ease-out 0.2s;
 }
 
 a:hover {
-	text-shadow: rgb(1, 71, 133) 0 0 1px;
+	text-shadow: var(--link-color) 0 0 1px;
 	transition: all ease-in 0.2s;
 }
 
@@ -68,17 +73,11 @@ a:hover {
 	white-space: nowrap;
 }
 
-.block-shadow {
-	/* -webkit-box-shadow: 0px 0px 7px 1px rgba(163,163,163,1);
-	-moz-box-shadow: 0px 0px 7px 1px rgba(163,163,163,1);
-	box-shadow: 0px 0px 7px 1px rgba(163,163,163,1); */
-}
-
 .body-content {
 	height: 100%;
 	padding: 20px;
 	max-width: 1024px;
-	background-color: #fff;
+	background-color: var(--bg-color);
 }
 
 .my-info {
@@ -100,7 +99,7 @@ a:hover {
 	font-weight: 700;
 	line-height: 1;
 	text-transform: uppercase;
-	color: rgb(0, 132, 206);
+	color: var(--main-color);
 	white-space: nowrap;
 }
 
@@ -109,7 +108,7 @@ a:hover {
 	margin-bottom: 15px;
 	font-size: 2rem;
 	line-height: 1;
-	color: rgb(255, 196, 0);
+	color: var(--sec-color);
 }
 
 .my-info__photo {
@@ -117,7 +116,7 @@ a:hover {
 	align-self: end;
 	width: 300px;	
 	height: 300px;
-	border: 1px solid rgb(0, 132, 206);
+	border: 1px solid var(--main-color);
 }
 
 .main-content {
@@ -133,16 +132,16 @@ a:hover {
 	margin: 20px;
 }
 
-.period, .place {
+.career__period, .career__place {
 	text-align: center;
 }
 
-.place::before {
+.career__place::before {
 	content: '';
 	height: 1px;
 	width: 30px;
 	margin: 10px auto;
-	background-color: rgb(0, 132, 206);
+	background-color: var(--main-color);
 	display: block;
 }
 
@@ -150,8 +149,7 @@ a:hover {
 	position: relative;
 	padding: 40px 30px 30px;
 	display: block;
-	/* background-color: aliceblue; */
-	border: 1px solid rgb(0, 132, 206);
+	border: 1px solid var(--main-color);
 }
 
 .section-caption {
@@ -163,7 +161,7 @@ a:hover {
 	left: 0;
 	height: 36px;
 	font-size: 1.2rem;
-	color: aliceblue;
+	color: var(--bg-color);
 	text-align: center;
 	text-transform: uppercase;
 	width: 100%;
@@ -173,14 +171,14 @@ a:hover {
 	content: '';
 	height: 100%;
 	width: 20px;
-	background-color: #fff;
+	background-color: var(--bg-color);
 }
 
 .section-caption__text {
 	font-weight: 700;
 	padding: 12px 20px;
 	line-height: 1;
-	background-color: rgb(0, 132, 206);
+	background-color: var(--main-color);
 	display: inline-block;
 }
 
@@ -198,10 +196,11 @@ a:hover {
 
 .social-button {
 	display: block;
-	font-size: 20px;
-	height: 22px;
-	width: 22px;
-	margin: 0 5px;
+	margin: 0 10px;
+}
+
+.social-button__img {
+	height: 24px;
 }
 
 .section_summary {
@@ -220,6 +219,21 @@ a:hover {
 	margin-bottom: 10px;
 }
 
+.code__source-content {
+	display: flex;
+	align-items: center;
+}
+
+.code__source::after {
+	content: '';
+	display: block;
+	height: 1px;
+	width: 100%;
+	margin: 10px auto;
+	background-color: var(--main-color);
+	display: block;
+}
+
 .code__link {
 	text-transform: uppercase;
 }
@@ -231,16 +245,6 @@ a:hover {
 
 .code__listing {
 	overflow: auto;
-}
-
-.code__source::after {
-	content: '';
-	display: block;
-	height: 1px;
-	width: 100%;
-	margin: 10px auto;
-	background-color: rgb(0, 132, 206);
-	display: block;
 }
 
 .section_education {
@@ -258,6 +262,7 @@ a:hover {
 }
 
 .career__row {
+	display: flex;
 	margin: 4px 0;
 }
 
@@ -265,8 +270,14 @@ a:hover {
 	margin-top: 0;
 }
 
-.career__row:last-child {
+.career__period-and-place {
 	margin: auto 0 0;
+}
+
+.career__image {
+	height: 20px;
+	width: 20px;
+	margin-right: 10px;
 }
 
 .section_skills {
@@ -281,8 +292,7 @@ a:hover {
 }
 
 .list-blocks_courses p {
-	color: rgb(104, 104, 104);
-	margin-left: 24px;
+	color: var(--sec-text-color);
 }
 
 .list-block__caption {
@@ -291,11 +301,16 @@ a:hover {
 	font-weight: 700;
 }
 
+.list-block__item {
+	display: flex;
+}
+
 .list-block__item::before {
 	font-family: 'icofont';
   	content: '\eed7';
+	font-size: 18px;
 	margin-right: 10px;
-	color: rgb(0, 132, 206);
+	color: var(--main-color);
 }
 
 .list-block__caption::after {
@@ -303,7 +318,7 @@ a:hover {
 	height: 1px;
 	width: 100%;
 	margin: 10px auto;
-	background-color: rgb(0, 132, 206);
+	background-color: var(--main-color);
 	display: block;
 }
 
@@ -329,17 +344,28 @@ a:hover {
 }
 
 .skill-bar {
-	background-color: rgb(207, 207, 207);
+	position: relative;
+	background-color: var(--bar-color);
 }
 
 .skill-bar__progress {
-	background-color: rgb(0, 132, 206);
-	color: aliceblue;
+	background-color: var(--main-color);
+	color: var(--bg-color);
 	text-align: center;
 }
 
 .skill-bar__progress_B2 {
 	width: 66%;
+	color: var(--main-color);
+}
+
+.skill-bar__level {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	color: var(--bg-color);
+	text-align: center;
 }
 
 .footer-content {
@@ -372,13 +398,13 @@ a:hover {
 .myname {
 	grid-area: name;
 	text-align: center;
-	color: rgb(0, 132, 206);
+	color: var(--main-color);
 }
 
 .date {
 	grid-area: date;
 	text-align: center;
-	color: rgb(255, 196, 0);
+	color: var(--sec-color);
 }
 
 .contact-info {
@@ -390,7 +416,7 @@ a:hover {
 }
 
 .contact-info__prop {
-	color: rgb(104, 104, 104);
+	color: var(--sec-text-color);
 }
 
 /*--- Adaptive ---*/
