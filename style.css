@@ -114,7 +114,7 @@ a:hover {
 .my-info__photo {
 	grid-area: photo;
 	align-self: end;
-	width: 300px;	
+	width: 300px;
 	height: 300px;
 	border: 1px solid var(--main-color);
 }
@@ -186,21 +186,6 @@ a:hover {
 	grid-area: contact;
 	align-self: end;
 	margin-top: 20px;
-}
-
-.social-buttons {
-	display: flex;
-	justify-content: center;
-	margin-top: 15px;
-}
-
-.social-button {
-	display: block;
-	margin: 0 10px;
-}
-
-.social-button__img {
-	height: 24px;
 }
 
 .section_summary {
@@ -407,16 +392,28 @@ a:hover {
 	color: var(--sec-color);
 }
 
-.contact-info {
+.contacts {
 	display: grid;
-	grid-template-columns: 1fr 3fr 1fr 3fr;
+	grid-template-columns: 1fr 1fr;
 	justify-items: start;
-	column-gap: 5px;
+	column-gap: 40px;
 	row-gap: 5px;
 }
 
-.contact-info__prop {
-	color: var(--sec-text-color);
+.contacts-wrap {
+	display: flex;
+	justify-content: center;
+}
+
+.contacts__icon {
+	height: 20px;
+	width: 20px;
+	margin-right: 10px;
+}
+
+.contacts__link {
+	display: flex;
+	align-items: center;
 }
 
 /*--- Adaptive ---*/
@@ -430,8 +427,8 @@ a:hover {
 		font-size: 1.3rem;
 	}
 
-	.contact-info {
-		grid-template-columns: 1fr 3fr;
+	.contacts {
+		grid-template-columns: 1fr;
 	}
 
 	.my-info__photo {
@@ -457,8 +454,8 @@ a:hover {
 	}
 
 	.my-info__photo {
-		width: 218px;
-		height: 218px;
+		width: 241px;
+		height: 241px;
 	}
 
 	.main-content {
@@ -468,7 +465,7 @@ a:hover {
 							 "skills skills skills skills"
 							 "courses courses courses courses"
 							 "languages languages languages languages"
-							 "code code code code";	
+							 "code code code code";
 	}
 
 	.list-blocks_skills, .list-blocks_courses {
