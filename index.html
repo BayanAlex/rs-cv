@@ -62,7 +62,7 @@
     <span class="js-decl">const</span> x = expr.match(<span class="js-regexp">/\w(?=[-+])/</span>).toString();
     <span class="js-decl">const</span> n = +expr.match(<span class="js-regexp">/(?&lt;=\^)\d+/</span>).toString();
     <span class="js-decl">let</span> result = [];
-    <span class="js-cycle">for</span>(<span class="js-decl">let</span> k = n; k >= <span class="js-num">0</span>; k--) {
+    <span class="js-cycle">for</span>(<span class="js-decl">let</span> k = n; k &gt;= <span class="js-num">0</span>; k--) {
         <span class="js-decl">let</span> c = <span class="js-str">''</span> + (fact(n) / (fact(k) * fact(n - k))) * a**k * b**(n - k);
         <span class="js-flow">if</span>(c == <span class="js-str">'0'</span>)
             <span class="js-flow">continue</span>;  
