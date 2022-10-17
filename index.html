@@ -14,8 +14,8 @@
             <div class="my-info">
                 <h1 class="my-info__name">Oleksandr Shyhyda</h1>
                 <h2 class="my-info__occupation">Future Web Developer</h2>
-                <img src="img/photo.jpg" alt="my photo" class="my-info__photo block-shadow">
-                <section class="section section_contact-info block-shadow">
+                <img src="img/photo.jpg" alt="my photo" class="my-info__photo">
+                <section class="section section_contact-info">
                     <div class="section-caption"><h3 class="section-caption__text">Contact Info</h3></div>
                     <div class="contact-info">
                         <div class="contact-info__prop">address:</div><div class="contact-info__value"><a href="https://www.google.com/maps/place/%D0%9C%D0%B8%D0%BA%D0%BE%D0%BB%D0%B0%D1%97%D0%B2,+%D0%9C%D0%B8%D0%BA%D0%BE%D0%BB%D0%B0%D1%97%D0%B2%D1%81%D1%8C%D0%BA%D0%B0+%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D1%8C,+54000/@46.9332135,31.8679147,11z/data=!3m1!4b1!4m5!3m4!1s0x40c5cb89fb7213d5:0x970e39fab9e05680!8m2!3d46.975033!4d31.9945829?">Mykolaiv, Ukraine</a></div>
@@ -24,8 +24,8 @@
                         <div class="contact-info__prop">gitlab:</div><div class="contact-info__value"><a href="https://gitlab.com/cyberalex">cyberalex</a></div>
                     </div>
                     <div class="social-buttons">
-                        <a href="https://www.linkedin.com/in/oleksandr-shyhyda-1150aa139" class="social-button"><i class="icofont-linkedin"></i></a>
-                        <a href="https://www.facebook.com/alessandro.shigida" class="social-button"><i class="icofont-facebook"></i></a>
+                        <a href="https://www.linkedin.com/in/oleksandr-shyhyda-1150aa139" class="social-button"><img src="img/icon-linkedin.svg" alt="linkedin-link" class="social-button__img"></a>
+                        <a href="https://www.facebook.com/alessandro.shigida" class="social-button"><img src="img/icon-facebook.svg" alt="facebook-link" class="social-button__img"></a>
                     </div>
                 </section>
             </div>
@@ -33,7 +33,7 @@
 
         <main>
             <div class="main-content">
-                <section class="section section_summary block-shadow">
+                <section class="section section_summary">
                     <div class="section-caption"><h3 class="section-caption__text">Summary</h3></div>
                     <div class="summary-content">
                         <p>I have been fond of programming since high school. I started from <strong>Pascal/Delphi</strong> and then switched to <span class="no-wrap"><strong>C (embedded)</strong></span> and <span class="no-wrap"><strong>C++ (Qt)</strong></span>.</p>
@@ -42,16 +42,18 @@
                         <p>Also, I automated the document flow using <strong>VBA</strong> in MS Excel and Word.</p>
                         <p>Now I am passionate about <strong>Web development</strong> and wish to continue my path in IT.</p>
                         <p>You can view examples of my current training projects in my <a href="https://gitlab.com/cyberalex">GitLab</a>.</p>
-                        <p>You can also enjoy playing my <a href="https://cyberalex.gitlab.io/snake">Snake Game</a> (Russian version) <i class="icofont-slightly-smile"></i></p>
+                        <p>You can also enjoy playing my <a href="https://cyberalex.gitlab.io/snake">Snake Game</a> <img src="img/icon-smile.svg" height="24" alt="smile-emoji"></p>
                     </div>
                 </section>
 
-                <section class="section section_code block-shadow">
+                <section class="section section_code">
                     <div class="section-caption"><h3 class="section-caption__text">Code example</h3></div>
                     <div class="code">
                         <div class="code__source">
-                            <img src="img/codewars-icon.svg" alt="Codewars kata" class="code__img">
-                            <a href="https://www.codewars.com/kata/540d0fdd3b6532e5c3000b5b" class="code__link">Binomial Expansion</a>
+                            <div class="code__source-content">
+                                <img src="img/icon-codewars.svg" alt="Codewars kata" class="code__img">
+                                <a href="https://www.codewars.com/kata/540d0fdd3b6532e5c3000b5b" class="code__link">Binomial Expansion</a>
+                            </div>
                         </div>
 
                         <pre class="code__listing"><code><span class="js-func">function</span> <span class="js-func-name">expand</span>(expr) {
@@ -85,32 +87,47 @@
                     </div>
                 </section>
 
-                <section class="section section_education block-shadow">
+                <section class="section section_education">
                     <div class="section-caption"><h3 class="section-caption__text">Education</h3></div>
                     <div class="career">
-                        <div class="career__row"><i class="icofont-university"></i> <a href="https://nuos.edu.ua/">Admiral Makarov National University of Shipbuilding</a></div>
-                        <div class="career__row"><i class="icofont-education"></i> Master's degree with distinction in</div>
-                        <div class="career__row">Electromechanical Systems and Electric Drive</div>
                         <div class="career__row">
-                            <div class="place">Mykolaiv, Ukraine</div>
-                            <div class="period">2005-2011</div>
+                            <img src="img/icon-university.svg" alt="" class="career__image">
+                            <div class="career__text"><a href="https://nuos.edu.ua/">Admiral Makarov National University of Shipbuilding</a></div>
+                        </div>
+                        <div class="career__row">
+                            <img src="img/icon-graduate.svg" alt="" class="career__image">
+                            <div class="career__text">Electromechanical Systems and Electric Drive</div>
+                        </div>
+                        <div class="career__row">
+                            <img src="img/icon-degree.svg" alt="" class="career__image">
+                            <div class="career__text">Master's Degree with Distinction</div>
+                        </div>
+                        <div class="career__period-and-place">
+                            <div class="career__place">Mykolaiv, Ukraine</div>
+                            <div class="career__period">2005-2011</div>
                         </div>
                     </div>
                 </section>
 
-                <section class="section section_work-experience block-shadow">
+                <section class="section section_work-experience">
                     <div class="section-caption"><h3 class="section-caption__text">Work experience</h3></div>
                     <div class="career">
-                        <div class="career__row"><i class="icofont-anchor"></i>  <a href="http://a-technologies.com.ua/">A-Technologies LLC</a></div>
-                        <div class="career__row"><i class="icofont-worker"></i>  Marine radio and navagational equipment engineer</div>
                         <div class="career__row">
-                            <div class="place">Mykolaiv, Ukraine</div>
-                            <div class="period">since 2011</div>
+                            <img src="img/icon-bag.svg" alt="" class="career__image">
+                            <div class="career__text"><a href="http://a-technologies.com.ua/">A-Technologies LLC</a></div>
+                        </div>
+                        <div class="career__row">
+                            <img src="img/icon-worker.svg" alt="" class="career__image">
+                            <div class="career__text">Marine Radio and Navagational Equipment Engineer</div>
+                        </div>
+                        <div class="career__period-and-place">
+                            <div class="career__place">Mykolaiv, Ukraine</div>
+                            <div class="career__period">since 2011</div>
                         </div>
                     </div>
                 </section>
 
-                <section class="section section_skills block-shadow">
+                <section class="section section_skills">
                     <div class="section-caption"><h3 class="section-caption__text">Skills</h3></div>
                     <div class="list-blocks list-blocks_skills">
                         <div class="list-block">
@@ -151,18 +168,24 @@
                     </div>
                 </section>
 
-                <section class="section section_courses block-shadow">
+                <section class="section section_courses">
                     <div class="section-caption"><h3 class="section-caption__text">Courses</h3></div>
                     <div class="list-blocks list-blocks_courses">
                         <div class="list-block">
                             <div class="list-block__caption">Professional</div>
                             <ul class="list-block__list">
-                                <li class="list-block__item">ECDIS by Transas (Wartsila)
-                                    <p>Istanbul (2014)</p>
-                                    <p>Gothenburg (2018)</p>
+                                <li class="list-block__item">
+                                    <div>
+                                        <div>ECDIS by Transas (Wartsila)</div>
+                                        <p>Istanbul (2014)</p>
+                                        <p>Gothenburg (2018)</p>
+                                    </div>
                                 </li>
-                                <li class="list-block__item">Inertial Navigational Systems by Teledyne TSS
-                                    <p>London (2012)</p>
+                                <li class="list-block__item">
+                                    <div>
+                                        <div>Inertial Navigational Systems by Teledyne TSS</div>
+                                        <p>London (2012)</p>
+                                    </div>
                                 </li>
                             </ul>
                         </div>
@@ -176,7 +199,7 @@
                     </div>
                 </section>
 
-                <section class="section section_languages block-shadow">
+                <section class="section section_languages">
                     <div class="section-caption"><h3 class="section-caption__text">Languages</h3></div>
                     <ul class="languages__list">
                         <li class="languages__item">
@@ -203,7 +226,8 @@
                                 <div class="languages__name">English</div>
                             </div>
                             <div class="skill-bar">
-                                <div class="skill-bar__progress skill-bar__progress_B2">B2</div>
+                                <div class="skill-bar__progress skill-bar__progress_B2">_</div>
+                                <div class="skill-bar__level">B2</div>
                             </div>
                         </li>
                     </ul>
