@@ -474,6 +474,10 @@ a:hover {
 }
 
 @media screen and (max-width: 610px) {
+	.body-content {
+		padding: 10px;
+	}
+
 	.my-info {
 		grid-template-columns: auto auto;
 		grid-template-areas: "name name"
