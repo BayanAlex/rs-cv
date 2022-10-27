@@ -474,6 +474,10 @@ a:hover {
 }
 
 @media screen and (max-width: 610px) {
+	.body-content {
+		padding: 10px;
+	}
+
 	.my-info {
 		grid-template-columns: auto auto;
 		grid-template-areas: "name name"
@@ -487,7 +491,7 @@ a:hover {
 	}
 
 	.my-info__name {
-		font-size: 7.86vw;
+		font-size: 7.3vw;
 	}
 
 	.my-info__occupation {
