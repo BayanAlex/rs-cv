@@ -271,13 +271,35 @@ a:hover {
 
 .list-blocks {
 	display: grid;
-	grid-template-columns: auto auto;
+	grid-template-columns: 1fr 1fr;
 	grid-column-gap: 60px;
 	grid-row-gap: 20px;
 }
 
+.list-blocks_skills {
+	grid-template-areas: "pc web"
+						 "electronics web"
+						 "prog web";
+}
+
 .list-blocks_courses p {
 	color: var(--sec-text-color);
+}
+
+.list-block_pc {
+	grid-area: pc;
+}
+
+.list-block_prog {
+	grid-area: prog;
+}
+
+.list-block_electronics {
+	grid-area: electronics;
+}
+
+.list-block_web {
+	grid-area: web;
 }
 
 .list-block__caption {
@@ -466,6 +488,10 @@ a:hover {
 							 "courses courses courses courses"
 							 "languages languages languages languages"
 							 "code code code code";
+	}
+
+	.list-blocks_skills {
+		grid-template-areas: "pc" "electronics" "prog" "web";
 	}
 
 	.list-blocks_skills, .list-blocks_courses {
