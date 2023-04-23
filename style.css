@@ -41,8 +41,8 @@ button{cursor: pointer;}
 button::-moz-focus-inner {padding:0;border:0;}
 a, a:visited{text-decoration: none;}
 a:hover{text-decoration: none;}
-ul li{list-style: none;}
 img{vertical-align: top;}
+ul li{list-style: none;}
 h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 /*--------------------*/
 
@@ -57,6 +57,20 @@ body {
 	line-height: 1.5;
 	height: fit-content;
 	background-color: var(--main-color);
+}
+
+.section_achievements ul li{
+	list-style: square;
+	margin-left: 18px;
+}
+
+p, .section_achievements ul li {
+	margin-bottom: 10px;
+	line-height: 1.2;
+}
+
+.section_achievements ul li::marker {
+	color: var(--main-color);
 }
 
 a, a:visited {
@@ -125,10 +139,11 @@ a:hover {
 	grid-row-gap: var(--block-row-gap);
 	grid-template-columns: 1fr 1fr 1fr 1fr;
 	grid-template-areas: "summary summary summary summary"
-						 "education education work work"
+						 "projects projects projects projects"
+						 "achievements achievements achievements achievements"
 						 "skills skills skills skills"
-						 "courses courses courses languages"
-						 "code code code code";
+						 "education education work work"
+						 "courses courses courses languages";
 	margin: 20px;
 }
 
@@ -192,44 +207,8 @@ a:hover {
 	grid-area: summary;
 }
 
-.section_summary p{
-	margin-bottom: 5px;
-}
-
-.section_code {
-	grid-area: code;
-}
-
-.code__source {
-	margin-bottom: 10px;
-}
-
-.code__source-content {
-	display: flex;
-	align-items: center;
-}
-
-.code__source::after {
-	content: '';
-	display: block;
-	height: 1px;
-	width: 100%;
-	margin: 10px auto;
-	background-color: var(--main-color);
-	display: block;
-}
-
-.code__link {
-	text-transform: uppercase;
-}
-
-.code__img {
-	height: 20px;
-	margin-right: 5px;
-}
-
-.code__listing {
-	overflow: auto;
+.section_projects {
+	grid-area: projects;
 }
 
 .section_education {
@@ -282,7 +261,7 @@ a:hover {
 						 "prog web";
 }
 
-.list-blocks_courses p {
+.list-block__add-info {
 	color: var(--sec-text-color);
 }
 
@@ -308,6 +287,12 @@ a:hover {
 	font-weight: 700;
 }
 
+.list-block__list_tech {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	margin: auto 0 0;
+}
+
 .list-block__item {
 	display: flex;
 }
@@ -329,12 +314,63 @@ a:hover {
 	display: block;
 }
 
+.list-block_project {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+}
+
+.project__code-try {
+	display: flex;
+	justify-content: center;
+	gap: 20px;
+}
+
+.project__code-try a::before {
+	content: '\ef1f';
+	font-family: icofont;
+	margin-right: 3px;
+}
+
+.project__description {
+	margin: 15px 0;
+}
+
+.project__preview {
+	margin-bottom: 5px;
+}
+
+.project__preview a {
+	display: block;
+	aspect-ratio: 1.69 / 1;
+	overflow: hidden;
+}
+
+.portfolio-block {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 15px;
+}
+
+.portfolio-block a {
+	font-size: 1.2em;
+	text-transform: uppercase;
+}
+
+.portfolio-block a img {
+	margin-right: 5px;
+}
+
 .section_courses {
 	grid-area: courses;
 }
 
 .section_languages {
 	grid-area: languages;
+}
+
+.section_achievements {
+	grid-area: achievements;
 }
 
 .language__name-with-flag {
@@ -459,7 +495,7 @@ a:hover {
 	}
 }
 
-@media screen and (max-width: 790px) {
+@media screen and (max-width: 815px) {
 	.my-info {
 		grid-template-columns: min-content auto;
 		grid-template-areas: "name name"
@@ -482,19 +518,20 @@ a:hover {
 
 	.main-content {
 		grid-template-areas: "summary summary summary summary"
+							 "projects projects projects projects"
+							 "achievements achievements achievements achievements"
 							 "education education education education"
-							 "work work work work"
 							 "skills skills skills skills"
+							 "work work work work"
 							 "courses courses courses courses"
-							 "languages languages languages languages"
-							 "code code code code";
+							 "languages languages languages languages";
 	}
 
 	.list-blocks_skills {
 		grid-template-areas: "pc" "electronics" "prog" "web";
 	}
 
-	.list-blocks_skills, .list-blocks_courses {
+	.list-blocks_skills, .list-blocks_courses, .list-blocks_projects {
 		grid-template-columns: 1fr;
 	}
 }
@@ -539,5 +576,11 @@ a:hover {
 
 	.footer-link {
 		margin-top: 20px;
+	}
+}
+
+@media screen and (max-width: 400px) {
+	.list-block__list_tech {
+		grid-template-columns: 1fr;
 	}
 }
