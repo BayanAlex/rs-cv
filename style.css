@@ -452,7 +452,9 @@ a:hover {
 
 .contacts {
 	display: grid;
-	grid-template-columns: 1fr 1fr;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: repeat(3, 1fr);
+	grid-auto-flow: column;
 	justify-items: start;
 	column-gap: 40px;
 	row-gap: 5px;
@@ -487,6 +489,7 @@ a:hover {
 
 	.contacts {
 		grid-template-columns: 1fr;
+		grid-template-rows: repeat(6, 1fr);
 	}
 
 	.my-info__photo {
