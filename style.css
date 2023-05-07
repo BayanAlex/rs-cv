@@ -459,6 +459,11 @@ a:hover {
 	row-gap: 5px;
 }
 
+.contacts__item {
+	overflow: hidden;
+    max-width: 100%;
+}
+
 .contacts-wrap {
 	display: flex;
 	justify-content: center;
@@ -473,6 +478,11 @@ a:hover {
 .contacts__link {
 	display: flex;
 	align-items: center;
+}
+
+.contacts__link span {
+	overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 /*--- Adaptive ---*/
