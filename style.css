@@ -150,7 +150,7 @@ a:hover {
 	text-align: center;
 }
 
-.career__place::before {
+.career__period-and-place::before {
 	content: '';
 	height: 1px;
 	width: 30px;
@@ -221,7 +221,6 @@ a:hover {
 .career {
 	display: flex;
 	flex-direction: column;
-	height: 100%;
 }
 
 .career__row {
@@ -231,10 +230,6 @@ a:hover {
 
 .career__row:first-child {
 	margin-top: 0;
-}
-
-.career__period-and-place {
-	margin: auto 0 0;
 }
 
 .career__image {
@@ -304,7 +299,7 @@ a:hover {
 	color: var(--main-color);
 }
 
-.list-block__caption::after {
+.divider, .list-block__caption::after {
 	content: '';
 	height: 1px;
 	width: 100%;
